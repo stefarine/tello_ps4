@@ -12,7 +12,7 @@ VENDOR_ID = 0x54c
 PRODUCT_ID = 0x9cc
 
 # Don't forget to change the path to libusb-1.0.dll
-BACKEND = usb.backend.libusb1.get_backend(find_library=lambda x: "C:\\Users\\Username\\Anaconda3\\Lib\\site-packages\\libusb\\_platform\\_windows\\x64\\libusb-1.0.dll")
+BACKEND = usb.backend.libusb1.get_backend(find_library=lambda x: "/Users/stephane/Library/Caches/pip/wheels/6b/33/1f/c2acd545553775dbe7ed8a25a9ab81293b1391bb5b471bf3d2")
 
 dev = usb.core.find(idVendor=VENDOR_ID, idProduct=PRODUCT_ID, backend=BACKEND)
 cfg = dev.get_active_configuration()
